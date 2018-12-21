@@ -1,0 +1,205 @@
+%-------------------------
+% Resume in Latex
+% Author : Sourabh Bajaj
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[pdftex]{hyperref}
+\usepackage{fancyhdr}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.375in}
+\addtolength{\evensidemargin}{-0.375in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[2]{
+  \item\small{
+    \textbf{#1}{: #2 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-1pt}\item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{-4pt}}
+
+\renewcommand{\labelitemii}{$\circ$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+
+
+
+
+
+
+
+
+\begin{document}
+
+%----------HEADING-----------------
+\begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+  \textbf{\href{}{\Large Prashanth Rao}} & Email : \href{mailto:}{psprao95@gmail.com}\\
+  \href{www.linkedin.com/in/psprao}{www.linkedin.com/in/psprao} & Mobile : +1-682-256-1683 \\
+\end{tabular*}
+
+
+%-----------EDUCATION-----------------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {University of Texas at Dallas}{Richardson TX}
+      {Masters, Computer Science;  GPA: 3.92/4.0}{Jan 2018 -- Dec. 2019}
+    \resumeSubheading
+      {VIT University}{Vellore, India}
+      {Bachelor of Technology, Electronics and Communication Engineering;  GPA: 3.5/4.0}{Jul 2013 -- Jul 2017}
+  \resumeSubHeadingListEnd
+
+
+
+\section{Technical Skills}
+
+   \resumeSubHeadingListStart
+    
+    \resumeSubItem{Languages: }{C++, SQL, Java (basic), Python}
+     \resumeSubItem{Web Technologies: }{HTML, CSS, JavaScript, PHP, jQuery, AJAX, REST APIs, Mean Stack}
+     \resumeSubItem{Strong areas} {Algorithms, Data Structures}
+     \resumeSubItem{Tools} {MySQL , Eclipse, IntelliJ, Git, Atom}
+  
+ 
+  \resumeSubHeadingListEnd
+  
+  
+  
+  
+  
+  
+  \section{Coursework}
+Database Design*, Advanced Design and Analysis of Algorithms*, Web Programming Languages*, Machine Learning, Operating Systems, Discrete Structures, Data Structures and Algorithms
+
+* currently ongoing in Fall '18
+  
+  
+  
+  
+  
+  \section{Projects}
+  \resumeSubHeadingListStart
+    
+\resumeSubItem{ContactManager}
+      {Application that manages a list of contacts by connecting to  an SQL database. Contact details may include name, addresses(multiple), phone numbers(multiple) and birthday. User operations include searching for contacts, adding a new contact and modifying existing contacts.}
+      
+\resumeSubItem{DavisBase}
+      {A rudimentary database engine that is based on a simplified file-per-table variation on the SQLite file format. Supported functions include creating a table, dropping a table, updating a table and listing all tables in the database.}
+      
+      
+    \resumeSubItem{Client-Server Datastore}
+      {Client-server system that communicates over TCP/IP sockets. The functions of the server included storing, retrieving, deleting and listing named data sets. The server was responsible for storing this data in a persistent fashion for later retrieval. 
+There were two modes of testing:
+1. Against a datastore server class implemented by the team
+2. Against the grader's datastore which was running on an AWS server}
+ 
+ 
+  \resumeSubItem{Task Executor Library}
+      {Service that accepts instances of tasks and executes each task in one of the multiple threads maintained by a thread pool. The goals were:
+1. To implement multithreaded synchronization when tasks are being executed by multiple threads.
+2. To implement a FIFO queue for the tasks added by the user which is both thread-safe and blocking
+This project was implemented in Eclipse.}
+      
+      
+      
+    
+
+
+ \resumeSubItem{QuickPackers}
+      {A website for a moving company with functionalities such as user cart, login,  signup, checkout. AIso includes use of Google Map APIs to determine destination locations.
+      }
+      
+      
+      
+      \resumeSubItem{SpellCheck}
+      {Spell-checker using the hash table data structure. A list of words are hashed into the hash table using:
+1. Linear probing first, and then
+2. Quadratic probing 
+The number of collisions are counted in each case. The table size was made to increase automatically based on the load factor.
+A search function was implemented which searches for any word in the list of words that were hashed.}
+      
+      
+      
+      
+      
+      \resumeSubItem{Wine Dataset NN}
+      {Implemented a neural network for classifying the wine data set. The wine data set contained examples each of which had 13 features. The project was implemented in python with the help of Tensorflow.
+Two neural networks were developed:
+1. One for the original dataset, which used overfitting techniques
+2. A smaller portion of the original dataset, which did not use overfitting techniques}
+
+
+
+  \resumeSubHeadingListEnd
+%----
+
+
+
+
+
+
+
+
+
+\section{Certifications}
+\begin{itemize}[noitemsep,nolistsep,leftmargin=*]
+
+
+   \item  'Neural Networks and Deep Learning' and  
+ 'Neural Networks: HyperParameter Tuning, Optimization and Regularization' (Courses 1 and 2) of the Deep learning Specialization by {\color{blue}{\textit {deeplearning.ai}} }  on Coursera
+     \item Python Fundamentals and Python Data Structures (Courses 1 and 2) of the Python Specialization by {\color{blue}{\textit{University of Michigan}}} on Coursera
+ 
+ 
+ \end{itemize}
+ 
+ 
+ 
+ 
+ 
+%-------------------------------------------
+\end{document}
