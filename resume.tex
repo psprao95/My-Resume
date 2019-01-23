@@ -1,9 +1,3 @@
-%-------------------------
-% Resume in Latex
-% Author : Sourabh Bajaj
-% License : MIT
-%------------------------
-
 \documentclass[letterpaper,11pt]{article}
 
 \usepackage{latexsym}
@@ -13,9 +7,14 @@
 \usepackage[usenames,dvipsnames]{color}
 \usepackage{verbatim}
 \usepackage{enumitem}
-\usepackage[pdftex]{hyperref}
+\usepackage[colorlinks = true,
+            linkcolor = blue,
+            urlcolor  = blue,
+            citecolor = blue,
+            anchorcolor = blue]{hyperref}
 \usepackage{fancyhdr}
 
+\usepackage{amsmath}
 
 \pagestyle{fancy}
 \fancyhf{} % clear all header and footer fields
@@ -78,8 +77,8 @@
 
 %----------HEADING-----------------
 \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
-  \textbf{\href{}{\Large Prashanth Rao}} & Email : \href{mailto:}{psprao95@gmail.com}\\
-  \href{www.linkedin.com/in/psprao}{LinkedIn}  \href{https://github.com/psprao95}{Github} & Mobile : +1-682-256-1683 \\
+  \textbf{\href{}{\Huge Prashanth Rao}} & Email : \href{mailto:}{psprao95@gmail.com}\\
+ & Mobile : +1-682-256-1683 \\
 \end{tabular*}
 
 
@@ -100,8 +99,8 @@
 
    \resumeSubHeadingListStart
     
-    \resumeSubItem{Programming Languages: }{C++, SQL, Java (basic), Python}
-     \resumeSubItem{Web Technologies:}{HTML, CSS, JavaScript, PHP, jQuery, AJAX, XML, JSON, RESTful APIs, Mean Stack}
+    \resumeSubItem{Programming Languages: }{C++, SQL, Java, Python, C}
+     \resumeSubItem{Web Technologies}{HTML, CSS, JavaScript, PHP, jQuery, AJAX, XML, JSON, Web Services (REST and SOAP), Mean Stack}
      \resumeSubItem{Databases} {MySQL, MAMP, MongoDB}
      \resumeSubItem{Tools} {Eclipse, IntelliJ,  Clion, Git, Atom, Slack, Latex}
   
@@ -114,9 +113,9 @@
   
   
   \section{Coursework}
-CS 6360 - Database Design, CS 6363 - Advanced Design and Analysis of Algorithms, CS 6314 - Web Programming Languages, CS 6375 - Machine Learning, CS 5348 - Operating Systems, CS 5333 - Discrete Structures, CS 5343 - Data Structures and Algorithms
+CS 6360 - Database Design, CS 6363 - Advanced Design and Analysis of Algorithms, CS 6314 - Web Programming Languages, CS 6375 - Machine Learning, CS 5348 - Operating Systems, CS 5333 - Discrete Structures, CS 5343 - Data Structures and Algorithms, CS 6313 - Statistical Methods for Data Science*, CS 6350 - Big Data Management and Analytics*, CS 6384 - Computer Vision*
 
-
+*Currently ongoing in Spring 2019
   
   
   
@@ -126,14 +125,14 @@ CS 6360 - Database Design, CS 6363 - Advanced Design and Analysis of Algorithms,
   \resumeSubHeadingListStart
     
 \resumeSubItem{Contact-Manager}
-      {Application that manages a list of contacts by connecting to  an SQL database. Contact details may include name, addresses(multiple), phone numbers(multiple) and birthday. User operations include searching for contacts, adding a new contact and modifying existing contacts.}
+      {A Java based GUI application that manages a list of contacts by interacting with an SQL database. Contact details may include name, multiple addresses, phone numbers and birthday. Functionalities include: 1. Searching for a contact based on any field, Adding a new contact, Modifying an existing contact, Deleting an existing contact, }
       
 \resumeSubItem{Davis-Base}
-      {A rudimentary database engine that is based on a simplified file-per-table variation on the SQLite file format. Supported functions include creating a table, dropping a table, updating a table and listing all tables in the database.}
+      {A simple database engine that is based on the file-per-table variation of the SQLite file format. Supported functions: Create Database, Drop Database, Show Databases, Create Table, Drop Table, Show Tables, Select Star, Select-From-Where, Insert, Update, Delete}
       
       
     \resumeSubItem{Client-Server-Datastore}
-      {Client-server system that communicates over TCP/IP sockets. The functions of the server included storing, retrieving, deleting and listing named data sets. The server was responsible for storing this data in a persistent fashion for later retrieval. 
+      {Client-server system that communicates over TCP-IP sockets. The functions of the server included storing, retrieving, deleting and listing named data sets. The server was responsible for storing this data in a persistent fashion for later retrieval. 
 There were two modes of testing:
 1. Against a datastore server class implemented by the team
 2. Against the grader's datastore which was running on an AWS server}
@@ -153,16 +152,6 @@ This project was implemented in Eclipse.}
  \resumeSubItem{Easy-Movers}
       {A website for a moving company. Features include user signup, login, cart (remove item, checkout clear cart), order history , search filter (text and category) for user and admin privileges for product updating product information, removing product, or adding a new product.
       }
-      
-      
-      
-      \resumeSubItem{SpellCheck}
-      {Spell-checker using the hash table data structure. A list of words are hashed into the hash table using:
-1. Linear probing first, and then
-2. Quadratic probing 
-The number of collisions are counted in each case. The table size was made to increase automatically based on the load factor.
-A search function was implemented which searches for any word in the list of words that were hashed.}
-      
       
       
       
@@ -198,6 +187,18 @@ Two neural networks were developed:
  \end{itemize}
  
  
+ 
+ 
+ 
+\section{Links}
+\begin{itemize}[noitemsep,nolistsep,leftmargin=*]
+
+
+   \item  Github: www.github.com/psprao95 \href{https://github.com/psprao95}{view here}
+     \item Linkedin : www.linkedin.com/in/psprao \href{https://www.linkedin.com/in/psprao/}{view here}
+ 
+ 
+ \end{itemize}
  
  
  
