@@ -6,14 +6,14 @@
 \usepackage{marvosym}
 \usepackage[usenames,dvipsnames]{color}
 \usepackage{verbatim}
-\usepackage{enumitem}
+\usepackage[inline]{enumitem}
 \usepackage[colorlinks = true,
             linkcolor = blue,
             urlcolor  = blue,
             citecolor = blue,
             anchorcolor = blue]{hyperref}
 \usepackage{fancyhdr}
-
+\usepackage{mathtools}
 \usepackage{amsmath}
 
 \pagestyle{fancy}
@@ -74,13 +74,31 @@
 
 
 \begin{document}
+\begin{center}
+  \textbf{\Huge Prashanth Rao}\\
+  \vspace{0.05in}
 
-%----------HEADING-----------------
-\begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
-  \textbf{\href{}{\Huge Prashanth Rao}} & Email : \href{mailto:}{psprao95@gmail.com}\\
- & Mobile : +1-682-256-1683 \\
-\end{tabular*}
 
+    
+    
+    \begin{itemize*}
+    \item7220 Mccallum Blvd \#314, Dallas, TX 75252
+    \hspace{4in}
+     \item  +1-682-256-1683
+     \hspace{1in}
+     \item \href{mailto:psprao95@gmail.com}{psprao95@gmail.com}
+    \end{itemize*}
+
+
+  
+  \begin{itemize*}
+    \item  Github: \href{www.github.com/psprao95}{\textcolor{blue}{www.github.com/psprao95}}
+     \item  LinkedIn: \href{www.linkedin.com/in/psprao}{\textcolor{blue}{www.linkedin.com/in/psprao}}
+    \hspace{8in}
+  
+  
+  \end{itemize*}
+\end{center}
 
 %-----------EDUCATION-----------------
 \section{Education}
@@ -98,107 +116,77 @@
 \section{Technical Skills}
 
    \resumeSubHeadingListStart
-    
-    \resumeSubItem{Programming Languages: }{C++, SQL, Java, Python, C}
-     \resumeSubItem{Web Technologies}{HTML, CSS, JavaScript, PHP, jQuery, AJAX, XML, JSON, Web Services (REST and SOAP), Mean Stack}
-     \resumeSubItem{Databases} {MySQL, MAMP, MongoDB}
-     \resumeSubItem{Tools} {Eclipse, IntelliJ,  Clion, Git, Atom, Slack, Latex}
+   
+ \resumeSubItem{Programming Languages: }{C++, SQL, R, Java, Python, C}
+    \resumeSubItem{Web Technologies}{HTML5, CSS3, JavaScript, PHP, jQuery, Ajax, Express, AngularJS, Node, Rest, Soap}
+     \resumeSubItem{Databases} {MySQL, MAMP, MongoDB, NoSQL}
+     \resumeSubItem{BigData Technologies}{Hadoop, Spark, Pig, Cassandra, Hive}
+     \resumeSubItem{Tools} {Git, Eclipse, IntelliJ,  Clion, Atom, Slack, Latex}
   
  
   \resumeSubHeadingListEnd
   
   
+    
+   \section{Coursework}
+Database Design, Advanced Design and Analysis of Algorithms, Web Programming Languages, Machine Learning, Operating Systems,  Discrete Structures, Data Structures and Algorithms,  Statistical Methods for Data Science, Big Data Management and Analytics, Computer Vision
   
-  
-  
-  
-  \section{Coursework}
-Database Design, Advanced Design and Analysis of Algorithms, Web Programming Languages, Machine Learning, Operating Systems,  Discrete Structures, Data Structures and Algorithms,  Statistical Methods for Data Science*, Big Data Management and Analytics*, Computer Vision*
 
-*Currently ongoing in Spring 2019
-  
-  
-  
-  
   
   \section{Projects}
-  \resumeSubHeadingListStart
-    
-\resumeSubItem{Contact-Manager}
-      {A Java based GUI application that manages a list of contacts by interacting with an SQL database. Contact details may include name, multiple addresses, phone numbers and birthday. Functionalities include: 1. Searching for a contact based on any field, Adding a new contact, Modifying an existing contact, Deleting an existing contact, }
+ \begin{itemize}[noitemsep,nolistsep,leftmargin=*]
+\item \textbf{Contact Manager}: A graphical user interface application that manages a list of contacts by interacting with an SQL database. Front-end design was created using Java. Features include:
+\begin{itemize}[noitemsep,nolistsep,leftmargin=*]
+
+\item searching for a contact using any field
+\item  adding a new contact
+\item  updating or deleting an existing contact
+\item displaying all contacts
+\end{itemize}
+
       
-\resumeSubItem{Davis-Base}
-      {A simple database engine that is based on the file-per-table variation of the SQLite file format. Supported functions: Create Database, Drop Database, Show Databases, Create Table, Drop Table, Show Tables, Select Star, Select-From-Where, Insert, Update, Delete}
+\item \textbf{Easy Movers}: A full stack website for a moving company. Built front end using HTML, CSS, Javascript and BootStrap. Back-end was implemented using MySQL and PHP. Features include:
+ \begin{itemize}[noitemsep,nolistsep,leftmargin=*]
+ \item  user signup, form validation and user login
+ \item user cart (remove from cart, clear cart), checkout and order history 
+ \item search filter (text and category) for displaying products  
+ \item admin privileges - updating product information, removing a product, or adding a new product
+ \end{itemize}
       
-      
-    \resumeSubItem{Client-Server-Datastore}
-      {Client-server system that communicates over TCP-IP sockets. The functions of the server included storing, retrieving, deleting and listing named data sets. The server was responsible for storing this data in a persistent fashion for later retrieval. 
-There were two modes of testing:
-1. Against a datastore server class implemented by the team
-2. Against the grader's datastore which was running on an AWS server}
+\item \textbf{DavisBase}: A simple database engine based on a file-per-table variation of the SQLite file format. Features include:
+ \begin{itemize}[noitemsep,nolistsep,leftmargin=*]
+\item DDL operations: create database, create table 
+ \item DML operations: update table, insert into, delete from table, drop database, drop table
+ \item DVL operations: show tables, show databases, describe table, use database
+      \end{itemize}
+\item \textbf{Client Server Datastore}: A generic client-server application that implements the CRUD operations.  
+ \begin{itemize}[noitemsep,nolistsep,leftmargin=*]
+ \item Server was designed to store data in a persistent fashion for later retrieval. \item Establishment of message protocol between the server and client.
+ \end{itemize}
+
+\item \textbf{Task Executor Library}: A service that accepts instances of tasks and executes each task in one of the multiple threads maintained by a thread pool. Implemented using
+ \begin{itemize}[noitemsep,nolistsep,leftmargin=*]
+\item multithreaded synchronization 
+\item blocking FIFO queue.
+ \end{itemize}
+     
+
+\end{itemize}
  
- 
-  \resumeSubItem{Task Executor Library}
-      {Service that accepts instances of tasks and executes each task in one of the multiple threads maintained by a thread pool. The goals were:
-1. To implement multithreaded synchronization when tasks are being executed by multiple threads.
-2. To implement a FIFO queue for the tasks added by the user which is both thread-safe and blocking
-This project was implemented in Eclipse.}
       
-      
-      
-    
-
-
- \resumeSubItem{Easy-Movers}
-      {A website for a moving company. Features include user signup, login, cart (remove item, checkout clear cart), order history , search filter (text and category) for user and admin privileges for product updating product information, removing product, or adding a new product.
-      }
-      
-      
-      
-      
-      \resumeSubItem{Wine Dataset NN}
-      {Implemented a neural network for classifying the wine data set. The wine data set contained examples each of which had 13 features. The project was implemented in python with the help of Tensorflow.
-Two neural networks were developed:
-1. One for the original dataset, which used overfitting techniques
-2. A smaller portion of the original dataset, which did not use overfitting techniques}
-
-
-
-  \resumeSubHeadingListEnd
-%----
-
-
-
-
-
-
-
-
 
 \section{Certifications}
 \begin{itemize}[noitemsep,nolistsep,leftmargin=*]
 
 
+
    \item  'Neural Networks and Deep Learning' and  
- 'Neural Networks: HyperParameter Tuning, Optimization and Regularization' (Courses 1 and 2) of the Deep learning Specialization by {\color{blue}{\textit {deeplearning.ai}} }  on Coursera
-     \item Python Fundamentals and Python Data Structures (Courses 1 and 2) of the Python Specialization by {\color{blue}{\textit{University of Michigan}}} on Coursera
- 
+ 'Neural Networks: HyperParameter Tuning, Optimization and Regularization' (Courses 1 and 2) of the Deep learning Specialization by {\color{blue}{\textit {deeplearning.ai}} }  on Coursera\\
+
  
  \end{itemize}
  
- 
- 
- 
- 
-\section{Links}
-\begin{itemize}[noitemsep,nolistsep,leftmargin=*]
 
-
-   \item  Github: www.github.com/psprao95 \href{https://github.com/psprao95}{view here}
-     \item Linkedin : www.linkedin.com/in/psprao \href{https://www.linkedin.com/in/psprao/}{view here}
- 
- 
- \end{itemize}
  
  
  
