@@ -15,6 +15,7 @@
 \usepackage{fancyhdr}
 \usepackage{mathtools}
 \usepackage{amsmath}
+\usepackage[T1]{fontenc}
 
 \pagestyle{fancy}
 \fancyhf{} % clear all header and footer fields
@@ -84,7 +85,7 @@
     \begin{itemize*}
     \item7220 Mccallum Blvd \#314, Dallas, TX 75252
     \hspace{4in}
-     \item  +1-682-256-1683
+     \item  682-256-1683
      \hspace{1in}
      \item \href{mailto:psprao95@gmail.com}{psprao95@gmail.com}
     \end{itemize*}
@@ -115,29 +116,36 @@
 
 \section{Technical Skills}
 
-   \resumeSubHeadingListStart
-   
- \resumeSubItem{Programming Languages: }{C++, SQL, R, Java, Python, Scala}
-    \resumeSubItem{Web Technologies}{HTML5, CSS3, JavaScript, PHP, jQuery, Ajax, Express, AngularJS, Node, Rest, Soap}
-     \resumeSubItem{Databases} {MySQL, MAMP, MongoDB, NoSQL}
-     \resumeSubItem{BigData Technologies}{Hadoop, Spark, Kafka, Pig, Cassandra, Hive}
-     \resumeSubItem{Tools} {Git, Eclipse, OpenCV,  Tensorflow, Slack, Latex}
-  
+\begin{itemize}[noitemsep,nolistsep,leftmargin=*]
+
+
+\item \textbf{Programming Languages}: C++, Java, Python
+\item \textbf{Databases:} SQL, Cassandra, BigTable, MongoDB
+\item \textbf{Web Technologies:} HTML, CSS, Javascript, jQuery, PHP, Ajax, Express, AngularJS, NodeJS, Rest, Soap
+ \item \textbf{Big Data Technologies}: Hadoop, Spark, Kafka, Pig, Cassandra, Data Bricks
+\item \textbf{Tools:} Git, Eclipse, OpenCV,  PyTorch, Tensorflow, Slack, Latex
+  \end{itemize}
  
-  \resumeSubHeadingListEnd
+
   
   
     
    \section{Coursework}
-Database Design, Advanced Design and Analysis of Algorithms, Web Programming Languages, Machine Learning, Operating Systems,  Discrete Structures, Data Structures and Algorithms,  Statistical Methods for Data Science, Big Data Management and Analytics, Computer Vision
+Database Design, Advanced Algorithms, Web Programming Languages, Machine Learning, Operating Systems,  Discrete Structures, Data Structures and Algorithms,  Statistical Data Science, Big Data Management and Analytics, Computer Vision
   
 
   
   \section{Projects}
  \begin{itemize}[noitemsep,nolistsep,leftmargin=*]
+ \item \textbf{Political Event Coding}: Gathering news articles from a list of websites and encoding them in a 'who-what-when-where' format in MongoDB using Spark and NLP. Included:
+\begin{itemize}[noitemsep,nolistsep,leftmargin=*]
+\item Scraping articles from the web using web scrapers like Scrapy and Newsplease
+\item Article metatdata extraction using CoreNLP and storing the results in MongoDB
+\item Encoding the article in 'who-what-when-where' format using Petrarch
+\end{itemize}
+
 \item \textbf{Contact Manager}: A graphical user interface application that manages a list of contacts by interacting with an SQL database. Front-end design was created using Java. Features include:
 \begin{itemize}[noitemsep,nolistsep,leftmargin=*]
-
 \item searching for a contact using any field,  adding a new contact
 \item  updating or deleting an existing contact, displaying all contacts
 \end{itemize}
@@ -146,7 +154,7 @@ Database Design, Advanced Design and Analysis of Algorithms, Web Programming Lan
 \item \textbf{Easy Movers}: A full stack website for a moving company. Built front end using HTML, CSS, Javascript and BootStrap. Back-end was implemented using MySQL and PHP. Features include:
  \begin{itemize}[noitemsep,nolistsep,leftmargin=*]
  \item  user signup, form validation and user login
- \item user cart (remove from cart, clear cart), checkout and order history 
+ \item user cart, checkout and order history 
  \item search filter (text and category) for displaying products  
  \item admin privileges - updating product information, removing a product, or adding a new product
  \end{itemize}
@@ -157,31 +165,25 @@ Database Design, Advanced Design and Analysis of Algorithms, Web Programming Lan
  \item DML operations: update table, insert into, delete from table, drop database, drop table
  \item DVL operations: show tables, show databases, describe table, use database
       \end{itemize}
-\item \textbf{Client Server Datastore}: A generic client-server application that implements the CRUD operations.  
- \begin{itemize}[noitemsep,nolistsep,leftmargin=*]
- \item Server was designed to store data in a persistent fashion for later retrieval. \item Establishment of message protocol between the server and client.
- \end{itemize}
 
 \item \textbf{Task Executor Library}: A service that accepts instances of tasks and executes each task in one of the multiple threads maintained by a thread pool. Implemented using multithreaded synchronization and blocking FIFO queue.
  \end{itemize}
      
 
  
-\section{Mini Projects}
+\section{Other Projects}
+
 \begin{itemize}[noitemsep,nolistsep,leftmargin=*]
+\item A news classifier for classifying news articles from the Guardian website using Kafka and Spark
+\item A generic client-server application that implements the CRUD operations.  
 \item Finding mutual friends of any two users using Hadoop Mapreduce
 \item A video library store built using the Mean Stack
 \item Classifying the wine dataset from the UCI Machine Learning Repository
 \item Extracting information from the Yelp dataset using Apache Spark and SparkSQL
-\item A complete database design for a fitness center 
+\item A complete database for a fitness center 
 \end{itemize}
 
-\section{Certifications}
-\begin{itemize}[noitemsep,nolistsep,leftmargin=*]
-\item Neural Networks and Deep Learning by \textcolor{blue}{\textit{deeplearning.ai}} on Coursera\item Neural Networks: HyperParameter Tuning, Optimization and Regularization by \textcolor{blue}{\textit{deeplearning.ai}} on Coursera
-\item Python Data Structures by \textcolor{blue}{\textit{University of Michigan}} on Coursera
- 
- \end{itemize}
+
  
 
  
